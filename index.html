@@ -2,24 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#2980b9">
     <title>Workout Tracker</title>
+    <link rel="manifest" href="#manifest">
+    <link rel="apple-touch-icon" href="data:image/png;base64,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">
     <style>
-        * {
-            box-sizing: border-box;
-            -webkit-tap-highlight-color: transparent;
-        }
         body {
-            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             margin: 0;
             padding: 0;
             color: #333;
             background-color: #f8f9fa;
-            -webkit-text-size-adjust: 100%;
         }
         .app-container {
-            max-width: 100%;
+            max-width: 800px;
             margin: 0 auto;
             padding: 10px;
         }
@@ -28,6 +25,7 @@
             color: white;
             padding: 15px;
             text-align: center;
+            border-radius: 8px 8px 0 0;
             margin-bottom: 15px;
             position: sticky;
             top: 0;
@@ -35,7 +33,7 @@
         }
         header h1 {
             margin: 0;
-            font-size: 1.4rem;
+            font-size: 1.5rem;
         }
         .workout-tabs {
             display: flex;
@@ -47,12 +45,12 @@
         }
         .tab {
             flex: 1;
-            padding: 12px 4px;
+            padding: 12px 5px;
             text-align: center;
             cursor: pointer;
-            transition: all 0.2s ease;
+            transition: all 0.3s ease;
             font-weight: bold;
-            font-size: 0.7rem;
+            font-size: 0.8rem;
         }
         .tab.active {
             background-color: #2980b9;
@@ -60,7 +58,7 @@
         }
         .workout-container {
             display: none;
-            padding: 12px;
+            padding: 15px;
             background-color: #fff;
             border-radius: 8px;
             margin-bottom: 15px;
@@ -75,25 +73,23 @@
             margin-bottom: 20px;
             border-radius: 8px;
             overflow: hidden;
-            font-size: 0.85rem;
         }
         th, td {
             border: 1px solid #e0e0e0;
-            padding: 8px 4px;
+            padding: 10px 5px;
             text-align: left;
+            font-size: 0.9rem;
         }
         th {
             background-color: #f2f2f2;
             font-weight: 600;
-            font-size: 0.8rem;
         }
         input[type="number"] {
-            width: 45px;
-            padding: 6px 4px;
+            width: 60px;
+            padding: 8px;
             border: 1px solid #ddd;
             border-radius: 4px;
             background-color: #f9f9f9;
-            font-size: 0.85rem;
         }
         .date-container {
             margin-bottom: 15px;
@@ -104,6 +100,9 @@
             border-radius: 4px;
             background-color: #f9f9f9;
         }
+        .history-table {
+            margin-top: 20px;
+        }
         button {
             border: none;
             padding: 10px 15px;
@@ -111,13 +110,13 @@
             border-radius: 4px;
             font-weight: 600;
             transition: background-color 0.3s;
-            margin: 5px 0;
-            font-size: 0.9rem;
         }
         .save-btn {
             background-color: #27ae60;
             color: white;
-            width: 100%;
+        }
+        .save-btn:hover {
+            background-color: #2ecc71;
         }
         .history-session {
             margin-bottom: 20px;
@@ -139,7 +138,9 @@
             background-color: #3498db;
             color: white;
             margin-bottom: 10px;
-            width: 100%;
+        }
+        .history-toggle:hover {
+            background-color: #2980b9;
         }
         .history-container {
             display: none;
@@ -150,24 +151,65 @@
         }
         .exercise-name {
             font-weight: bold;
-            font-size: 0.85rem;
         }
         .export-btn {
             background-color: #9b59b6;
             color: white;
-            width: 100%;
-            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .export-btn:hover {
+            background-color: #8e44ad;
+        }
+        .backup-btn {
+            background-color: #e67e22;
+            color: white;
+            margin-left: 10px;
+        }
+        .backup-btn:hover {
+            background-color: #d35400;
+        }
+        .restore-btn {
+            background-color: #1abc9c;
+            color: white;
+            margin-left: 10px;
+        }
+        .restore-btn:hover {
+            background-color: #16a085;
         }
         .button-group {
             display: flex;
             margin-bottom: 15px;
-            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .data-management {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .data-management h2 {
+            margin-top: 0;
+            color: #2c3e50;
+            font-size: 1.3rem;
+        }
+        .file-input {
+            margin: 10px 0;
+            width: 100%;
+        }
+        .auto-backup-option {
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
         .notification {
             padding: 12px;
             margin: 10px 0;
             border-radius: 4px;
             display: none;
+            animation: fadeInOut 5s forwards;
             text-align: center;
         }
         .success {
@@ -180,15 +222,30 @@
             color: #721c24;
             border: 1px solid #f5c6cb;
         }
-        .prev-value {
-            font-size: 0.8rem;
-            color: #666;
-            display: block;
-            background-color: #f5f5f5;
-            padding: 4px;
-            border-radius: 3px;
-            text-align: center;
-            min-height: 1.2em;
+        @keyframes fadeInOut {
+            0% { opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+        .install-prompt {
+            background-color: #e3f2fd;
+            border: 1px solid #bbdefb;
+            color: #0d47a1;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            display: none;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .install-btn {
+            background-color: #2196f3;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
         }
         footer {
             text-align: center;
@@ -197,6 +254,43 @@
             color: #7f8c8d;
             padding: 10px;
         }
+        .prev-value {
+            font-size: 0.85rem;
+            color: #666;
+            display: block;
+            background-color: #f5f5f5;
+            padding: 4px;
+            border-radius: 3px;
+            text-align: center;
+            min-height: 1.2em;
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.3rem;
+            }
+            .tab {
+                font-size: 0.7rem;
+                padding: 10px 3px;
+            }
+            table {
+                font-size: 0.85rem;
+            }
+            th, td {
+                padding: 6px 3px;
+            }
+            input[type="number"] {
+                width: 45px;
+                padding: 6px 4px;
+            }
+            button {
+                padding: 8px 12px;
+                font-size: 0.9rem;
+            }
+            .prev-value {
+                font-size: 0.75rem;
+                padding: 2px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -204,6 +298,11 @@
         <header>
             <h1>Workout Tracker</h1>
         </header>
+        
+        <div id="install-prompt" class="install-prompt">
+            <div>Add this app to your home screen for quick access</div>
+            <button id="install-btn" class="install-btn">Install</button>
+        </div>
         
         <div id="notification" class="notification"></div>
         
@@ -223,6 +322,8 @@
                 <thead>
                     <tr>
                         <th>Exercise</th>
+                        <th>Sets</th>
+                        <th>Goal</th>
                         <th>Last Weight</th>
                         <th>Weight</th>
                         <th>Last Reps</th>
@@ -232,58 +333,90 @@
                 <tbody>
                     <tr>
                         <td class="exercise-name">Deadlift</td>
+                        <td>5</td>
+                        <td>10-15</td>
                         <td><span class="prev-value" id="prev-weight-1-Deadlift">-</span></td>
                         <td><input type="number" class="weight-input" data-day="1" data-exercise="Deadlift"></td>
                         <td><span class="prev-value" id="prev-reps-1-Deadlift">-</span></td>
-                        <td><input type="number" class="reps-input" data-day="1" data-exercise="Deadlift"></td>
+                        <td><input type="number" class="reps-input" data-day="1" data-exercise="Deadlift" min="1" max="100"></td>
                     </tr>
                     <tr>
                         <td class="exercise-name">Barbell Row</td>
+                        <td>5</td>
+                        <td>25</td>
                         <td><span class="prev-value" id="prev-weight-1-Barbell Row">-</span></td>
                         <td><input type="number" class="weight-input" data-day="1" data-exercise="Barbell Row"></td>
                         <td><span class="prev-value" id="prev-reps-1-Barbell Row">-</span></td>
-                        <td><input type="number" class="reps-input" data-day="1" data-exercise="Barbell Row"></td>
+                        <td><input type="number" class="reps-input" data-day="1" data-exercise="Barbell Row" min="1" max="100"></td>
                     </tr>
                     <tr>
-                        <td class="exercise-name">Pull Up</td>
-                        <td><span class="prev-value" id="prev-weight-1-Pull Up">-</span></td>
-                        <td><input type="number" class="weight-input" data-day="1" data-exercise="Pull Up"></td>
-                        <td><span class="prev-value" id="prev-reps-1-Pull Up">-</span></td>
-                        <td><input type="number" class="reps-input" data-day="1" data-exercise="Pull Up"></td>
+                        <td class="exercise-name">Wide Grip Pull Up</td>
+                        <td>5</td>
+                        <td>35</td>
+                        <td><span class="prev-value" id="prev-weight-1-Wide Grip Pull Up">-</span></td>
+                        <td><input type="number" class="weight-input" data-day="1" data-exercise="Wide Grip Pull Up"></td>
+                        <td><span class="prev-value" id="prev-reps-1-Wide Grip Pull Up">-</span></td>
+                        <td><input type="number" class="reps-input" data-day="1" data-exercise="Wide Grip Pull Up" min="1" max="100"></td>
                     </tr>
                     <tr>
-                        <td class="exercise-name">Dumbbell Curl</td>
-                        <td><span class="prev-value" id="prev-weight-1-Dumbbell Curl">-</span></td>
-                        <td><input type="number" class="weight-input" data-day="1" data-exercise="Dumbbell Curl"></td>
-                        <td><span class="prev-value" id="prev-reps-1-Dumbbell Curl">-</span></td>
-                        <td><input type="number" class="reps-input" data-day="1" data-exercise="Dumbbell Curl"></td>
+                        <td class="exercise-name">Standing Dumbbell Curl</td>
+                        <td>4</td>
+                        <td>25</td>
+                        <td><span class="prev-value" id="prev-weight-1-Standing Dumbbell Curl">-</span></td>
+                        <td><input type="number" class="weight-input" data-day="1" data-exercise="Standing Dumbbell Curl"></td>
+                        <td><span class="prev-value" id="prev-reps-1-Standing Dumbbell Curl">-</span></td>
+                        <td><input type="number" class="reps-input" data-day="1" data-exercise="Standing Dumbbell Curl" min="1" max="100"></td>
                     </tr>
                     <tr>
-                        <td class="exercise-name">Preacher Curl</td>
-                        <td><span class="prev-value" id="prev-weight-1-Preacher Curl">-</span></td>
-                        <td><input type="number" class="weight-input" data-day="1" data-exercise="Preacher Curl"></td>
-                        <td><span class="prev-value" id="prev-reps-1-Preacher Curl">-</span></td>
-                        <td><input type="number" class="reps-input" data-day="1" data-exercise="Preacher Curl"></td>
+                        <td class="exercise-name">EZ Bar Preacher Curl</td>
+                        <td>4</td>
+                        <td>25</td>
+                        <td><span class="prev-value" id="prev-weight-1-EZ Bar Preacher Curl">-</span></td>
+                        <td><input type="number" class="weight-input" data-day="1" data-exercise="EZ Bar Preacher Curl"></td>
+                        <td><span class="prev-value" id="prev-reps-1-EZ Bar Preacher Curl">-</span></td>
+                        <td><input type="number" class="reps-input" data-day="1" data-exercise="EZ Bar Preacher Curl" min="1" max="100"></td>
                     </tr>
                     <tr>
-                        <td class="exercise-name">Shrug</td>
-                        <td><span class="prev-value" id="prev-weight-1-Shrug">-</span></td>
-                        <td><input type="number" class="weight-input" data-day="1" data-exercise="Shrug"></td>
-                        <td><span class="prev-value" id="prev-reps-1-Shrug">-</span></td>
-                        <td><input type="number" class="reps-input" data-day="1" data-exercise="Shrug"></td>
+                        <td class="exercise-name">Seated Barbell Wrist Curl</td>
+                        <td>4</td>
+                        <td>35</td>
+                        <td><span class="prev-value" id="prev-weight-1-Seated Barbell Wrist Curl">-</span></td>
+                        <td><input type="number" class="weight-input" data-day="1" data-exercise="Seated Barbell Wrist Curl"></td>
+                        <td><span class="prev-value" id="prev-reps-1-Seated Barbell Wrist Curl">-</span></td>
+                        <td><input type="number" class="reps-input" data-day="1" data-exercise="Seated Barbell Wrist Curl" min="1" max="100"></td>
+                    </tr>
+                    <tr>
+                        <td class="exercise-name">Barbell Shrug</td>
+                        <td>5</td>
+                        <td>35</td>
+                        <td><span class="prev-value" id="prev-weight-1-Barbell Shrug">-</span></td>
+                        <td><input type="number" class="weight-input" data-day="1" data-exercise="Barbell Shrug"></td>
+                        <td><span class="prev-value" id="prev-reps-1-Barbell Shrug">-</span></td>
+                        <td><input type="number" class="reps-input" data-day="1" data-exercise="Barbell Shrug" min="1" max="100"></td>
+                    </tr>
+                    <tr>
+                        <td class="exercise-name">Abs Exercise</td>
+                        <td>3</td>
+                        <td>15-20</td>
+                        <td><span class="prev-value" id="prev-weight-1-Abs Exercise">-</span></td>
+                        <td><input type="number" class="weight-input" data-day="1" data-exercise="Abs Exercise"></td>
+                        <td><span class="prev-value" id="prev-reps-1-Abs Exercise">-</span></td>
+                        <td><input type="number" class="reps-input" data-day="1" data-exercise="Abs Exercise" min="1" max="100"></td>
                     </tr>
                 </tbody>
             </table>
             
             <div>
                 <label for="day1-notes">Notes:</label>
-                <textarea id="day1-notes" class="notes-area" placeholder="How did the workout feel?"></textarea>
+                <textarea id="day1-notes" class="notes-area" placeholder="How did the workout feel? Any issues?"></textarea>
             </div>
             
             <div class="button-group">
                 <button class="save-btn" onclick="saveWorkout(1)">Save Workout</button>
-                <button class="history-toggle" onclick="toggleHistory(1)">Show/Hide History</button>
+                <button class="export-btn" onclick="exportWorkoutDay(1)">Export to CSV</button>
             </div>
+            
+            <button class="history-toggle" onclick="toggleHistory(1)">Show/Hide History</button>
             
             <div class="history-container" id="history-1">
                 <!-- History will be populated here -->
@@ -300,6 +433,8 @@
                 <thead>
                     <tr>
                         <th>Exercise</th>
+                        <th>Sets</th>
+                        <th>Goal</th>
                         <th>Last Weight</th>
                         <th>Weight</th>
                         <th>Last Reps</th>
@@ -309,58 +444,81 @@
                 <tbody>
                     <tr>
                         <td class="exercise-name">Bench Press</td>
+                        <td>5</td>
+                        <td>30</td>
                         <td><span class="prev-value" id="prev-weight-2-Bench Press">-</span></td>
                         <td><input type="number" class="weight-input" data-day="2" data-exercise="Bench Press"></td>
                         <td><span class="prev-value" id="prev-reps-2-Bench Press">-</span></td>
-                        <td><input type="number" class="reps-input" data-day="2" data-exercise="Bench Press"></td>
+                        <td><input type="number" class="reps-input" data-day="2" data-exercise="Bench Press" min="1" max="100"></td>
                     </tr>
                     <tr>
-                        <td class="exercise-name">Incline Press</td>
-                        <td><span class="prev-value" id="prev-weight-2-Incline Press">-</span></td>
-                        <td><input type="number" class="weight-input" data-day="2" data-exercise="Incline Press"></td>
-                        <td><span class="prev-value" id="prev-reps-2-Incline Press">-</span></td>
-                        <td><input type="number" class="reps-input" data-day="2" data-exercise="Incline Press"></td>
+                        <td class="exercise-name">Hammer Strength Bench Press</td>
+                        <td>5</td>
+                        <td>30</td>
+                        <td><span class="prev-value" id="prev-weight-2-Hammer Strength Bench Press">-</span></td>
+                        <td><input type="number" class="weight-input" data-day="2" data-exercise="Hammer Strength Bench Press"></td>
+                        <td><span class="prev-value" id="prev-reps-2-Hammer Strength Bench Press">-</span></td>
+                        <td><input type="number" class="reps-input" data-day="2" data-exercise="Hammer Strength Bench Press" min="1" max="100"></td>
                     </tr>
                     <tr>
-                        <td class="exercise-name">Shoulder Press</td>
-                        <td><span class="prev-value" id="prev-weight-2-Shoulder Press">-</span></td>
-                        <td><input type="number" class="weight-input" data-day="2" data-exercise="Shoulder Press"></td>
-                        <td><span class="prev-value" id="prev-reps-2-Shoulder Press">-</span></td>
-                        <td><input type="number" class="reps-input" data-day="2" data-exercise="Shoulder Press"></td>
+                        <td class="exercise-name">Seated Overhead Press</td>
+                        <td>5</td>
+                        <td>35</td>
+                        <td><span class="prev-value" id="prev-weight-2-Seated Overhead Press">-</span></td>
+                        <td><input type="number" class="weight-input" data-day="2" data-exercise="Seated Overhead Press"></td>
+                        <td><span class="prev-value" id="prev-reps-2-Seated Overhead Press">-</span></td>
+                        <td><input type="number" class="reps-input" data-day="2" data-exercise="Seated Overhead Press" min="1" max="100"></td>
                     </tr>
                     <tr>
-                        <td class="exercise-name">Lateral Raise</td>
-                        <td><span class="prev-value" id="prev-weight-2-Lateral Raise">-</span></td>
-                        <td><input type="number" class="weight-input" data-day="2" data-exercise="Lateral Raise"></td>
-                        <td><span class="prev-value" id="prev-reps-2-Lateral Raise">-</span></td>
-                        <td><input type="number" class="reps-input" data-day="2" data-exercise="Lateral Raise"></td>
+                        <td class="exercise-name">Dumbbell Lateral Raise</td>
+                        <td>4</td>
+                        <td>30</td>
+                        <td><span class="prev-value" id="prev-weight-2-Dumbbell Lateral Raise">-</span></td>
+                        <td><input type="number" class="weight-input" data-day="2" data-exercise="Dumbbell Lateral Raise"></td>
+                        <td><span class="prev-value" id="prev-reps-2-Dumbbell Lateral Raise">-</span></td>
+                        <td><input type="number" class="reps-input" data-day="2" data-exercise="Dumbbell Lateral Raise" min="1" max="100"></td>
                     </tr>
                     <tr>
-                        <td class="exercise-name">Reverse Fly</td>
-                        <td><span class="prev-value" id="prev-weight-2-Reverse Fly">-</span></td>
-                        <td><input type="number" class="weight-input" data-day="2" data-exercise="Reverse Fly"></td>
-                        <td><span class="prev-value" id="prev-reps-2-Reverse Fly">-</span></td>
-                        <td><input type="number" class="reps-input" data-day="2" data-exercise="Reverse Fly"></td>
+                        <td class="exercise-name">Bent Over Reverse Fly</td>
+                        <td>4</td>
+                        <td>30</td>
+                        <td><span class="prev-value" id="prev-weight-2-Bent Over Reverse Fly">-</span></td>
+                        <td><input type="number" class="weight-input" data-day="2" data-exercise="Bent Over Reverse Fly"></td>
+                        <td><span class="prev-value" id="prev-reps-2-Bent Over Reverse Fly">-</span></td>
+                        <td><input type="number" class="reps-input" data-day="2" data-exercise="Bent Over Reverse Fly" min="1" max="100"></td>
                     </tr>
                     <tr>
-                        <td class="exercise-name">Tricep Extension</td>
-                        <td><span class="prev-value" id="prev-weight-2-Tricep Extension">-</span></td>
-                        <td><input type="number" class="weight-input" data-day="2" data-exercise="Tricep Extension"></td>
-                        <td><span class="prev-value" id="prev-reps-2-Tricep Extension">-</span></td>
-                        <td><input type="number" class="reps-input" data-day="2" data-exercise="Tricep Extension"></td>
+                        <td class="exercise-name">Close Grip Bench Press</td>
+                        <td>4</td>
+                        <td>25</td>
+                        <td><span class="prev-value" id="prev-weight-2-Close Grip Bench Press">-</span></td>
+                        <td><input type="number" class="weight-input" data-day="2" data-exercise="Close Grip Bench Press"></td>
+                        <td><span class="prev-value" id="prev-reps-2-Close Grip Bench Press">-</span></td>
+                        <td><input type="number" class="reps-input" data-day="2" data-exercise="Close Grip Bench Press" min="1" max="100"></td>
+                    </tr>
+                    <tr>
+                        <td class="exercise-name">Seated Dumbbell Extension</td>
+                        <td>4</td>
+                        <td>30</td>
+                        <td><span class="prev-value" id="prev-weight-2-Seated Dumbbell Extension">-</span></td>
+                        <td><input type="number" class="weight-input" data-day="2" data-exercise="Seated Dumbbell Extension"></td>
+                        <td><span class="prev-value" id="prev-reps-2-Seated Dumbbell Extension">-</span></td>
+                        <td><input type="number" class="reps-input" data-day="2" data-exercise="Seated Dumbbell Extension" min="1" max="100"></td>
                     </tr>
                 </tbody>
             </table>
             
             <div>
                 <label for="day2-notes">Notes:</label>
-                <textarea id="day2-notes" class="notes-area" placeholder="How did the workout feel?"></textarea>
+                <textarea id="day2-notes" class="notes-area" placeholder="How did the workout feel? Any issues?"></textarea>
             </div>
             
             <div class="button-group">
                 <button class="save-btn" onclick="saveWorkout(2)">Save Workout</button>
-                <button class="history-toggle" onclick="toggleHistory(2)">Show/Hide History</button>
+                <button class="export-btn" onclick="exportWorkoutDay(2)">Export to CSV</button>
             </div>
+            
+            <button class="history-toggle" onclick="toggleHistory(2)">Show/Hide History</button>
             
             <div class="history-container" id="history-2">
                 <!-- History will be populated here -->
@@ -377,6 +535,8 @@
                 <thead>
                     <tr>
                         <th>Exercise</th>
+                        <th>Sets</th>
+                        <th>Goal</th>
                         <th>Last Weight</th>
                         <th>Weight</th>
                         <th>Last Reps</th>
@@ -386,58 +546,81 @@
                 <tbody>
                     <tr>
                         <td class="exercise-name">Squat</td>
+                        <td>4</td>
+                        <td>20</td>
                         <td><span class="prev-value" id="prev-weight-3-Squat">-</span></td>
                         <td><input type="number" class="weight-input" data-day="3" data-exercise="Squat"></td>
                         <td><span class="prev-value" id="prev-reps-3-Squat">-</span></td>
-                        <td><input type="number" class="reps-input" data-day="3" data-exercise="Squat"></td>
+                        <td><input type="number" class="reps-input" data-day="3" data-exercise="Squat" min="1" max="100"></td>
                     </tr>
                     <tr>
                         <td class="exercise-name">Leg Press</td>
+                        <td>5</td>
+                        <td>50</td>
                         <td><span class="prev-value" id="prev-weight-3-Leg Press">-</span></td>
                         <td><input type="number" class="weight-input" data-day="3" data-exercise="Leg Press"></td>
                         <td><span class="prev-value" id="prev-reps-3-Leg Press">-</span></td>
-                        <td><input type="number" class="reps-input" data-day="3" data-exercise="Leg Press"></td>
+                        <td><input type="number" class="reps-input" data-day="3" data-exercise="Leg Press" min="1" max="100"></td>
                     </tr>
                     <tr>
                         <td class="exercise-name">Leg Extension</td>
+                        <td>5</td>
+                        <td>40</td>
                         <td><span class="prev-value" id="prev-weight-3-Leg Extension">-</span></td>
                         <td><input type="number" class="weight-input" data-day="3" data-exercise="Leg Extension"></td>
                         <td><span class="prev-value" id="prev-reps-3-Leg Extension">-</span></td>
-                        <td><input type="number" class="reps-input" data-day="3" data-exercise="Leg Extension"></td>
+                        <td><input type="number" class="reps-input" data-day="3" data-exercise="Leg Extension" min="1" max="100"></td>
                     </tr>
                     <tr>
-                        <td class="exercise-name">Deadlift</td>
-                        <td><span class="prev-value" id="prev-weight-3-Deadlift">-</span></td>
-                        <td><input type="number" class="weight-input" data-day="3" data-exercise="Deadlift"></td>
-                        <td><span class="prev-value" id="prev-reps-3-Deadlift">-</span></td>
-                        <td><input type="number" class="reps-input" data-day="3" data-exercise="Deadlift"></td>
+                        <td class="exercise-name">Stiff Leg Deadlift</td>
+                        <td>5</td>
+                        <td>30</td>
+                        <td><span class="prev-value" id="prev-weight-3-Stiff Leg Deadlift">-</span></td>
+                        <td><input type="number" class="weight-input" data-day="3" data-exercise="Stiff Leg Deadlift"></td>
+                        <td><span class="prev-value" id="prev-reps-3-Stiff Leg Deadlift">-</span></td>
+                        <td><input type="number" class="reps-input" data-day="3" data-exercise="Stiff Leg Deadlift" min="1" max="100"></td>
                     </tr>
                     <tr>
                         <td class="exercise-name">Leg Curl</td>
+                        <td>5</td>
+                        <td>35</td>
                         <td><span class="prev-value" id="prev-weight-3-Leg Curl">-</span></td>
                         <td><input type="number" class="weight-input" data-day="3" data-exercise="Leg Curl"></td>
                         <td><span class="prev-value" id="prev-reps-3-Leg Curl">-</span></td>
-                        <td><input type="number" class="reps-input" data-day="3" data-exercise="Leg Curl"></td>
+                        <td><input type="number" class="reps-input" data-day="3" data-exercise="Leg Curl" min="1" max="100"></td>
                     </tr>
                     <tr>
-                        <td class="exercise-name">Calf Raise</td>
-                        <td><span class="prev-value" id="prev-weight-3-Calf Raise">-</span></td>
-                        <td><input type="number" class="weight-input" data-day="3" data-exercise="Calf Raise"></td>
-                        <td><span class="prev-value" id="prev-reps-3-Calf Raise">-</span></td>
-                        <td><input type="number" class="reps-input" data-day="3" data-exercise="Calf Raise"></td>
+                        <td class="exercise-name">Seated Calf Raise</td>
+                        <td>5</td>
+                        <td>35</td>
+                        <td><span class="prev-value" id="prev-weight-3-Seated Calf Raise">-</span></td>
+                        <td><input type="number" class="weight-input" data-day="3" data-exercise="Seated Calf Raise"></td>
+                        <td><span class="prev-value" id="prev-reps-3-Seated Calf Raise">-</span></td>
+                        <td><input type="number" class="reps-input" data-day="3" data-exercise="Seated Calf Raise" min="1" max="100"></td>
+                    </tr>
+                    <tr>
+                        <td class="exercise-name">Abs Exercise</td>
+                        <td>3</td>
+                        <td>15-20</td>
+                        <td><span class="prev-value" id="prev-weight-3-Abs Exercise">-</span></td>
+                        <td><input type="number" class="weight-input" data-day="3" data-exercise="Abs Exercise"></td>
+                        <td><span class="prev-value" id="prev-reps-3-Abs Exercise">-</span></td>
+                        <td><input type="number" class="reps-input" data-day="3" data-exercise="Abs Exercise" min="1" max="100"></td>
                     </tr>
                 </tbody>
             </table>
             
             <div>
                 <label for="day3-notes">Notes:</label>
-                <textarea id="day3-notes" class="notes-area" placeholder="How did the workout feel?"></textarea>
+                <textarea id="day3-notes" class="notes-area" placeholder="How did the workout feel? Any issues?"></textarea>
             </div>
             
             <div class="button-group">
                 <button class="save-btn" onclick="saveWorkout(3)">Save Workout</button>
-                <button class="history-toggle" onclick="toggleHistory(3)">Show/Hide History</button>
+                <button class="export-btn" onclick="exportWorkoutDay(3)">Export to CSV</button>
             </div>
+            
+            <button class="history-toggle" onclick="toggleHistory(3)">Show/Hide History</button>
             
             <div class="history-container" id="history-3">
                 <!-- History will be populated here -->
@@ -445,15 +628,137 @@
         </div>
         
         <div style="margin-top: 20px; text-align: center;">
-            <button class="export-btn" onclick="exportAllWorkouts()">Export All Workouts</button>
+            <button class="export-btn" onclick="exportAllWorkouts()">Export All Workouts to CSV</button>
+        </div>
+        
+        <!-- Data Management Section -->
+        <div class="data-management">
+            <h2>Data Protection</h2>
+            <p>Prevent data loss by backing up your workout history regularly.</p>
+            
+            <div class="button-group">
+                <button class="backup-btn" onclick="backupData()">Backup Data</button>
+                <button class="export-btn" onclick="exportAllWorkouts()">Export to CSV</button>
+            </div>
+            
+            <h3>Restore Data</h3>
+            <p>Upload a previously saved backup file (.json)</p>
+            <input type="file" id="restore-file" class="file-input" accept=".json">
+            <button class="restore-btn" onclick="restoreData()">Restore from Backup</button>
+            
+            <div class="auto-backup-option">
+                <input type="checkbox" id="auto-backup" onchange="toggleAutoBackup()">
+                <label for="auto-backup">Enable automatic backup after each workout save</label>
+            </div>
         </div>
         
         <footer>
-            Workout Tracker - v1.0
+            Workout Tracker - Version 1.1
         </footer>
     </div>
     
     <script>
+        // Create and inject Web App Manifest
+        const manifestContent = {
+            "name": "Workout Tracker",
+            "short_name": "Workout",
+            "description": "Track your 3-day workout program",
+            "start_url": "./",
+            "display": "standalone",
+            "background_color": "#ffffff",
+            "theme_color": "#2980b9",
+            "icons": [
+                {
+                    "src": "data:image/png;base64,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",
+                    "sizes": "192x192",
+                    "type": "image/png"
+                },
+                {
+                    "src": "data:image/png;base64,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",
+                    "sizes": "512x512",
+                    "type": "image/png"
+                }
+            ]
+        };
+        
+        const manifestBlob = new Blob([JSON.stringify(manifestContent)], {type: 'application/json'});
+        const manifestURL = URL.createObjectURL(manifestBlob);
+        document.querySelector('link[rel="manifest"]').href = manifestURL;
+        
+        // Create and inject service worker
+        const swContent = `
+            const CACHE_NAME = 'workout-tracker-v1';
+            const urlsToCache = [
+                './',
+                './index.html'
+            ];
+            
+            self.addEventListener('install', event => {
+                event.waitUntil(
+                    caches.open(CACHE_NAME)
+                        .then(cache => {
+                            return cache.addAll(urlsToCache);
+                        })
+                );
+            });
+            
+            self.addEventListener('fetch', event => {
+                event.respondWith(
+                    caches.match(event.request)
+                        .then(response => {
+                            if (response) {
+                                return response;
+                            }
+                            return fetch(event.request);
+                        })
+                );
+            });
+        `;
+        
+        const swBlob = new Blob([swContent], {type: 'text/javascript'});
+        const swURL = URL.createObjectURL(swBlob);
+        
+        // Register service worker
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register(swURL)
+                .then(reg => {
+                    console.log('Service Worker registered with scope:', reg.scope);
+                })
+                .catch(error => {
+                    console.error('Service Worker registration failed:', error);
+                });
+        }
+        
+        // Handle PWA installation
+        let deferredPrompt;
+        const installPrompt = document.getElementById('install-prompt');
+        const installBtn = document.getElementById('install-btn');
+        
+        window.addEventListener('beforeinstallprompt', (e) => {
+            // Prevent Chrome 67 and earlier from automatically showing the prompt
+            e.preventDefault();
+            // Stash the event so it can be triggered later
+            deferredPrompt = e;
+            // Show the install button
+            installPrompt.style.display = 'flex';
+        });
+        
+        installBtn.addEventListener('click', () => {
+            // Hide the app provided install prompt
+            installPrompt.style.display = 'none';
+            // Show the browser install prompt
+            deferredPrompt.prompt();
+            // Wait for the user to respond to the prompt
+            deferredPrompt.userChoice.then((choiceResult) => {
+                if (choiceResult.outcome === 'accepted') {
+                    console.log('User accepted the install prompt');
+                } else {
+                    console.log('User dismissed the install prompt');
+                }
+                deferredPrompt = null;
+            });
+        });
+        
         // Initialize workout history in localStorage if it doesn't exist
         if (!localStorage.getItem('workoutHistory')) {
             localStorage.setItem('workoutHistory', JSON.stringify({
@@ -461,6 +766,11 @@
                 day2: [],
                 day3: []
             }));
+        }
+        
+        // Initialize auto-backup setting
+        if (!localStorage.getItem('autoBackup')) {
+            localStorage.setItem('autoBackup', 'false');
         }
         
         // Set today's date as default for date inputs
@@ -479,6 +789,26 @@
             loadPreviousWorkoutData(1);
             loadPreviousWorkoutData(2);
             loadPreviousWorkoutData(3);
+            
+            // Set auto-backup checkbox state
+            document.getElementById('auto-backup').checked = localStorage.getItem('autoBackup') === 'true';
+            
+            // Check for previous backup reminder in localStorage
+            checkBackupReminder();
+            
+            // Set up window beforeunload event to remind users to save data
+            window.addEventListener('beforeunload', function(e) {
+                // Check if there's unsaved data in the form fields
+                const hasUnsavedData = checkUnsavedData();
+                
+                if (hasUnsavedData) {
+                    // Standard way of showing a confirmation dialog before leaving
+                    e.preventDefault();
+                    // Message may be displayed in some browsers, or a standard message in others
+                    e.returnValue = 'You have unsaved workout data. Are you sure you want to leave?';
+                    return e.returnValue;
+                }
+            });
         });
         
         // Load previous workout data for the specified day
@@ -508,6 +838,51 @@
             });
         }
         
+        // Toggle auto-backup
+        function toggleAutoBackup() {
+            const autoBackup = document.getElementById('auto-backup').checked;
+            localStorage.setItem('autoBackup', autoBackup.toString());
+            showNotification(autoBackup ? 'Auto-backup enabled' : 'Auto-backup disabled', 'success');
+        }
+        
+        // Check if there's unsaved data in the form
+        function checkUnsavedData() {
+            // Check all weight and rep inputs
+            const inputs = document.querySelectorAll('.weight-input, .reps-input');
+            for (let input of inputs) {
+                if (input.value && input.value !== '0') {
+                    return true;
+                }
+            }
+            
+            // Check notes areas
+            const notes = document.querySelectorAll('.notes-area');
+            for (let note of notes) {
+                if (note.value.trim() !== '') {
+                    return true;
+                }
+            }
+            
+            return false;
+        }
+        
+        // Check if it's time to remind about backup
+        function checkBackupReminder() {
+            const lastBackupDate = localStorage.getItem('lastBackupDate');
+            if (!lastBackupDate) {
+                showNotification('Remember to backup your workout data regularly to prevent data loss', 'success');
+                return;
+            }
+            
+            const lastBackup = new Date(lastBackupDate);
+            const now = new Date();
+            const daysSinceLastBackup = Math.floor((now - lastBackup) / (1000 * 60 * 60 * 24));
+            
+            if (daysSinceLastBackup > 7) {
+                showNotification('It\'s been over a week since your last backup. Consider backing up your workout data.', 'success');
+            }
+        }
+        
         // Show notification
         function showNotification(message, type) {
             const notification = document.getElementById('notification');
@@ -515,10 +890,10 @@
             notification.className = 'notification ' + type;
             notification.style.display = 'block';
             
-            // Hide after 3 seconds
+            // Hide after 5 seconds
             setTimeout(() => {
                 notification.style.display = 'none';
-            }, 3000);
+            }, 5000);
         }
         
         // Change workout tab
@@ -583,6 +958,11 @@
                 
                 // Clear form fields
                 clearFormFields(day);
+                
+                // Auto backup if enabled
+                if (localStorage.getItem('autoBackup') === 'true') {
+                    backupData(true); // true means silent (no alert)
+                }
                 
                 showNotification('Workout saved successfully!', 'success');
             } catch (error) {
@@ -707,6 +1087,129 @@
             historyContainer.classList.toggle('active');
         }
         
+        // Backup data
+        function backupData(silent = false) {
+            try {
+                const workoutHistory = localStorage.getItem('workoutHistory');
+                
+                // Create a JSON blob
+                const blob = new Blob([workoutHistory], { type: 'application/json' });
+                
+                // Create a timestamp for the filename
+                const timestamp = new Date().toISOString().replace(/:/g, '-').substring(0, 19);
+                
+                // Create download link
+                const a = document.createElement('a');
+                a.download = `workout_backup_${timestamp}.json`;
+                a.href = window.URL.createObjectURL(blob);
+                a.style.display = 'none';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                
+                // Update last backup date
+                localStorage.setItem('lastBackupDate', new Date().toISOString());
+                
+                if (!silent) {
+                    showNotification('Backup created successfully', 'success');
+                }
+            } catch (error) {
+                console.error('Error creating backup:', error);
+                showNotification('Error creating backup', 'error');
+            }
+        }
+        
+        // Restore data
+        function restoreData() {
+            const fileInput = document.getElementById('restore-file');
+            const file = fileInput.files[0];
+            
+            if (!file) {
+                showNotification('Please select a backup file', 'error');
+                return;
+            }
+            
+            const reader = new FileReader();
+            
+            reader.onload = function(e) {
+                try {
+                    const data = JSON.parse(e.target.result);
+                    
+                    // Validate the JSON structure
+                    if (!data.day1 || !data.day2 || !data.day3) {
+                        throw new Error('Invalid backup file format');
+                    }
+                    
+                    // Confirm before overwriting data
+                    if (confirm('This will overwrite your current workout data. Continue?')) {
+                        localStorage.setItem('workoutHistory', JSON.stringify(data));
+                        
+                        // Reload history
+                        loadWorkoutHistory(1);
+                        loadWorkoutHistory(2);
+                        loadWorkoutHistory(3);
+                        
+                        // Update the "Last" values
+                        loadPreviousWorkoutData(1);
+                        loadPreviousWorkoutData(2);
+                        loadPreviousWorkoutData(3);
+                        
+                        showNotification('Data restored successfully', 'success');
+                    }
+                } catch (error) {
+                    console.error('Error restoring data:', error);
+                    showNotification('Error restoring data. Invalid backup file.', 'error');
+                }
+            };
+            
+            reader.readAsText(file);
+        }
+        
+        // Export workout data for a specific day
+        function exportWorkoutDay(day) {
+            const history = JSON.parse(localStorage.getItem('workoutHistory'));
+            const dayHistory = history[`day${day}`];
+            
+            if (dayHistory.length === 0) {
+                showNotification('No workout data to export!', 'error');
+                return;
+            }
+            
+            let csvContent = 'data:text/csv;charset=utf-8,';
+            
+            // Add headers
+            csvContent += 'Date,Workout Day,Exercise,Weight,Reps,Notes\n';
+            
+            // Add data
+            dayHistory.forEach(workout => {
+                const workoutDay = day === 1 ? 'Monday: Back & Biceps' : day === 2 ? 'Wednesday: Chest & Shoulders' : 'Friday: Legs & Abs';
+                
+                workout.exercises.forEach(exercise => {
+                    // Format each row: Date,Workout Day,Exercise,Weight,Reps,Notes
+                    // Escape quotes in notes
+                    const safeNotes = workout.notes ? workout.notes.replace(/"/g, '""') : '';
+                    
+                    csvContent += `${workout.date},"${workoutDay}","${exercise.name}",${exercise.weight},${exercise.reps},"${safeNotes}"\n`;
+                });
+            });
+            
+            try {
+                // Create download link
+                const encodedUri = encodeURI(csvContent);
+                const link = document.createElement('a');
+                link.setAttribute('href', encodedUri);
+                link.setAttribute('download', `workout_day${day}_export.csv`);
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                
+                showNotification('Export successful', 'success');
+            } catch (error) {
+                console.error('Error exporting data:', error);
+                showNotification('Error exporting data', 'error');
+            }
+        }
+        
         // Export all workout data
         function exportAllWorkouts() {
             const history = JSON.parse(localStorage.getItem('workoutHistory'));
@@ -721,15 +1224,27 @@
             // Add headers
             csvContent += 'Date,Workout Day,Exercise,Weight,Reps,Notes\n';
             
-            // Add data for all days
-            ['day1', 'day2', 'day3'].forEach((dayKey, dayIndex) => {
-                const dayName = dayIndex === 0 ? 'Monday' : dayIndex === 1 ? 'Wednesday' : 'Friday';
-                
-                history[dayKey].forEach(workout => {
-                    workout.exercises.forEach(exercise => {
-                        const safeNotes = workout.notes ? workout.notes.replace(/"/g, '""') : '';
-                        csvContent += `${workout.date},"${dayName}","${exercise.name}",${exercise.weight},${exercise.reps},"${safeNotes}"\n`;
-                    });
+            // Add data for day 1
+            history.day1.forEach(workout => {
+                workout.exercises.forEach(exercise => {
+                    const safeNotes = workout.notes ? workout.notes.replace(/"/g, '""') : '';
+                    csvContent += `${workout.date},"Monday: Back & Biceps","${exercise.name}",${exercise.weight},${exercise.reps},"${safeNotes}"\n`;
+                });
+            });
+            
+            // Add data for day 2
+            history.day2.forEach(workout => {
+                workout.exercises.forEach(exercise => {
+                    const safeNotes = workout.notes ? workout.notes.replace(/"/g, '""') : '';
+                    csvContent += `${workout.date},"Wednesday: Chest & Shoulders","${exercise.name}",${exercise.weight},${exercise.reps},"${safeNotes}"\n`;
+                });
+            });
+            
+            // Add data for day 3
+            history.day3.forEach(workout => {
+                workout.exercises.forEach(exercise => {
+                    const safeNotes = workout.notes ? workout.notes.replace(/"/g, '""') : '';
+                    csvContent += `${workout.date},"Friday: Legs & Abs","${exercise.name}",${exercise.weight},${exercise.reps},"${safeNotes}"\n`;
                 });
             });
             
@@ -738,14 +1253,14 @@
                 const encodedUri = encodeURI(csvContent);
                 const link = document.createElement('a');
                 link.setAttribute('href', encodedUri);
-                link.setAttribute('download', 'workout_data.csv');
+                link.setAttribute('download', 'all_workout_data.csv');
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
                 
                 showNotification('Export successful', 'success');
             } catch (error) {
-                console.error('Error exporting data:', error);
+                console.error('Error exporting all data:', error);
                 showNotification('Error exporting data', 'error');
             }
         }
